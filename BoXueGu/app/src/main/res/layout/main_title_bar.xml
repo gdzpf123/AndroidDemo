@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/title_bar"
+    android:layout_height="50dp"
+    android:background="@android:color/lighter_gray">
+
+    <!-- 设置标题栏背景颜色为go_back_selector.xml -->
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"/>
+
+    <!-- 设置标题栏显示字体样式 -->
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

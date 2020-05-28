@@ -48,7 +48,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //欢迎界面跳转到主界面
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, RegisterActivity.class);
                 startActivity(intent);
                 SplashActivity.this.finish();
             }
