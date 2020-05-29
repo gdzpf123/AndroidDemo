@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".UI.LoginActivity"></activity>
+        <activity android:name=".UI.Mine.FindPswActivity"></activity>
+        <activity android:name=".UI.Mine.ModifyPswActivity" />
+        <activity android:name=".UI.Mine.SettingActivity" />
+        <activity android:name=".UI.LoginActivity" />
         <activity android:name=".UI.RegisterActivity" />
         <activity android:name=".UI.SplashActivity">
             <intent-filter>
@@ -18,13 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".UI.MainActivity" />
     </application>
 
 </manifest>

@@ -9,7 +9,6 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.boxuegu.MainActivity;
 import com.example.boxuegu.R;
 
 import java.util.Timer;
@@ -48,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //欢迎界面跳转到主界面
-                Intent intent = new Intent(SplashActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 SplashActivity.this.finish();
             }
