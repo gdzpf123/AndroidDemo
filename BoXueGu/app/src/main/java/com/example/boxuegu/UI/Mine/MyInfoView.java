@@ -54,6 +54,8 @@ public class MyInfoView {
                 //判断是否登录
                 if (readLoginStatus()){
                     //已登录跳转到个人资料界面
+                    Intent intent = new Intent(mContext,UserInfoActivity.class);
+                    mContext.startActivity(intent);
                 }else{
                     //未登录跳转到登录界面
                     Intent intent = new Intent(mContext, LoginActivity.class);

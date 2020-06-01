@@ -18,12 +18,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.boxuegu.R;
+import com.example.boxuegu.UI.Exercises.ExercisesView;
 import com.example.boxuegu.UI.Mine.MyInfoView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private MyInfoView mMyInfoView;
+    private ExercisesView mExerciseView;
 
 
     //中间内容栏
@@ -208,6 +210,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case 1:
                 //习题界面
+                if (mExerciseView == null){
+                    mExerciseView = new ExercisesView(this);
+                    mBodyLayout.addView(mExerciseView.getView());
+                }else{
+                    mExerciseView.getView();
+                }
+                mExerciseView.showView();
                 break;
             case 2:
                 //我的界面
