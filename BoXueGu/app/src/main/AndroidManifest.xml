@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".UI.Exercises.ExercisesDetailActivity"></activity>
+        <activity android:name=".UI.Courses.PlayHistoryActivity"></activity>
+        <activity android:name=".UI.Courses.VideoPlayActivity" />
+        <activity android:name=".UI.Courses.VideoListActivity" />
+        <activity android:name=".UI.Exercises.ExercisesDetailActivity" />
         <activity android:name=".UI.Mine.ChangeUserInfoActivity" />
         <activity android:name=".UI.Mine.UserInfoActivity" />
         <activity android:name=".UI.Mine.FindPswActivity" />
