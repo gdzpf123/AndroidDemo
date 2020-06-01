@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.boxuegu.Bean.ExerciseBean;
 import com.example.boxuegu.R;
+import com.example.boxuegu.UI.Exercises.ExercisesDetailActivity;
 
 import java.util.List;
 
@@ -73,20 +74,28 @@ public class ExercisesAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if (bean == null)
-                    return;
+                if (bean != null)
                 //跳转到习题详情界面  后面添加
-//                Intent intent = new Intent(mContext, ExercisesDetailActivity.class);
-//                intent.putExtra("id",bean.id);
-//                intent.putExtra("title",bean.title);
-//                mContext.startActivity(intent);
+                openExerciseDetail(bean);
+
             }
         });
         return convertView;
     }
+
+    private void openExerciseDetail(ExerciseBean bean){
+        Intent intent = new Intent(mContext, ExercisesDetailActivity.class);
+        intent.putExtra("id",bean.id);
+        intent.putExtra("title",bean.title);
+        mContext.startActivity(intent);
+    }
+
     class ViewHolder{
         public TextView title,content;
         public TextView order;
     }
+
+
+
 }
 

@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.boxuegu.R;
+import com.example.boxuegu.UI.Courses.CourseView;
 import com.example.boxuegu.UI.Exercises.ExercisesView;
 import com.example.boxuegu.UI.Mine.MyInfoView;
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private MyInfoView mMyInfoView;
     private ExercisesView mExerciseView;
+    private CourseView mCourseView;
+
 
 
     //中间内容栏
@@ -207,6 +210,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (viewIndex){
             case 0:
                 //课程界面
+                if (mCourseView == null){
+                    mCourseView = new CourseView(this);
+                    mBodyLayout.addView(mCourseView.getView());
+                }else{
+                    mCourseView.getView();
+                }
+                mCourseView.showView();
                 break;
             case 1:
                 //习题界面
