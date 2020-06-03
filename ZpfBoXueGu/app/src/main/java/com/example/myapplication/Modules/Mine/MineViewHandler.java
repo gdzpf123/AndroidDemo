@@ -1,23 +1,27 @@
 package com.example.myapplication.Modules.Mine;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.Base.BaseViewHandler;
+import com.example.myapplication.Modules.Mine.Setting.SettingActivity;
 import com.example.myapplication.R;
 
 public class MineViewHandler extends BaseViewHandler implements View.OnClickListener {
 
     ImageView headImg;
     TextView nameLab;
+    Context mContext;
 
 
 
     public MineViewHandler(Context context ) {
         super(context);
+        mContext=context;
     }
 
     @Override
@@ -51,7 +55,8 @@ public class MineViewHandler extends BaseViewHandler implements View.OnClickList
                 break;
 
             case R.id.setting:
-
+                Intent intent = new Intent(mContext, SettingActivity.class);
+                mContext.startActivity(intent);
                 break;
 
                 default:
@@ -61,6 +66,7 @@ public class MineViewHandler extends BaseViewHandler implements View.OnClickList
     }
 
     private void openSetting(){
+
         Log.d("as", "openSetting: ");
     }
 

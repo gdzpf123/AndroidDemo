@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="#FFBB22">
+    android:background="#FFBB22"
+    android:id="@+id/titleBar">
 
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/backBtn"
+        android:src="@drawable/iv_back_selected"
         />
 
     <TextView
