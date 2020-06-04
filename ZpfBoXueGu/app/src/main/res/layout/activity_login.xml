@@ -21,7 +21,11 @@
         tools:layout_editor_absoluteY="120dp"
         android:id="@+id/icon"
         android:src="@drawable/default_icon"
+<<<<<<< HEAD
         tools:ignore="MissingConstraints" />
+=======
+        />
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
     <!-- 用户名输入框 -->
     <EditText
@@ -42,8 +46,12 @@
         android:singleLine="true"
         android:textColor="#000000"
         android:textColorHint="#a3a3a3"
+<<<<<<< HEAD
         android:textSize="14sp"
         tools:ignore="MissingConstraints" />
+=======
+        android:textSize="14sp" />
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
     <!-- 用户名输入框 -->
     <EditText
@@ -63,8 +71,12 @@
         android:singleLine="true"
         android:textColor="#000000"
         android:textColorHint="#a3a3a3"
+<<<<<<< HEAD
         android:textSize="14sp"
         tools:ignore="MissingConstraints" />
+=======
+        android:textSize="14sp" />
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
     <TextView
         android:layout_width="match_parent"
@@ -99,9 +111,16 @@
             android:layout_weight="1"
             android:textSize="16sp"
             android:textColor="#FFFFFF"
+<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@+id/loginBtn"
             android:id="@+id/registerBtn"
             android:gravity="center_horizontal" />
+=======
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+            android:id="@+id/registerBtn"
+            />
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
         <TextView
             android:layout_width="wrap_content"
@@ -110,9 +129,16 @@
             android:layout_weight="1"
             android:textSize="16sp"
             android:textColor="#FFFFFF"
+<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@+id/loginBtn"
             android:id="@+id/findPswBtn"
             android:gravity="center_horizontal" />
+=======
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+            android:id="@+id/findPswBtn"
+            />
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
 
     </LinearLayout>

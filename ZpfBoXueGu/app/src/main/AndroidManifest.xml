@@ -10,8 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+<<<<<<< HEAD
         <activity android:name=".Modules.LoginRegist.LoginActivity1"></activity>
         <activity android:name=".Modules.LoginRegist.RegistActivity" />
+=======
+        <activity android:name=".Modules.LoginRegist.RegistActivity"></activity>
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
         <activity android:name=".Modules.LoginRegist.LoginActivity" />
         <activity android:name=".Modules.Mine.Setting.SettingActivity" />
         <activity android:name=".Modules.MainActivity">

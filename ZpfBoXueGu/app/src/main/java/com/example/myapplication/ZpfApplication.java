@@ -13,6 +13,10 @@ public class ZpfApplication extends Application {
         super.onCreate();
         context = getApplicationContext();
 
+<<<<<<< HEAD
+=======
+//        LitePal.initialize(this);
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
     }
     /**

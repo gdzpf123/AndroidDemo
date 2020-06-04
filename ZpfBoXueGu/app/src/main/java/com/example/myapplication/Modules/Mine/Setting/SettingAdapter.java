@@ -6,8 +6,12 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+<<<<<<< HEAD
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+=======
+import com.chad.library.adapter.base.BaseViewHolder;
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 import com.example.myapplication.R;
 
 

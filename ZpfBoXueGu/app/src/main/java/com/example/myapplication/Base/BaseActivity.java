@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -41,7 +44,10 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
     protected void showToast(String msg){
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }

@@ -7,16 +7,24 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.TextView;
 
 import com.example.myapplication.Base.BaseActivity;
+=======
+
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+<<<<<<< HEAD
 public class SettingActivity extends BaseActivity {
+=======
+public class SettingActivity extends AppCompatActivity {
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
 
 
     private RecyclerView recyclerView;
@@ -29,10 +37,13 @@ public class SettingActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
+<<<<<<< HEAD
 //        setTitleString("设置");
 //        TextView titleLab = findViewById(R.id.titleLab);
 //        titleLab.setText("设置");
 
+=======
+>>>>>>> 3884a903dbdf262f6e004b5ea16392c794bc519a
         recyclerView=findViewById(R.id.recyelerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
