@@ -4,9 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.Beans.UserInfoModel;
+import com.example.myapplication.Modules.LoginRegist.LoginActivity;
+import com.example.myapplication.Utils.UserInfoManager;
 
 import java.lang.reflect.Constructor;
 
@@ -35,6 +41,11 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
+
+    protected void showToast(String msg){
+        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+    }
+
     protected View getFrameViewFromLayout(int layoutResource){
         LayoutInflater mInflater = LayoutInflater.from(this);
         View view = mInflater.inflate(layoutResource,null);
@@ -59,11 +70,20 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
+    public Boolean checkLogin(){
+        UserInfoModel userInfoModel = UserInfoManager.getCurrentUserInfo();
+        if (userInfoModel == null){
+            pushActivity(LoginActivity.class);
+        }
+        return userInfoModel!=null;
+    }
+
 
     public void onActivityPopBack(Intent data)
     {
 
     }
+
 
 
 

@@ -2,6 +2,7 @@ package com.example.myapplication.Modules;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,20 @@ import com.example.myapplication.R;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
+    private static MainActivity shareInstance;
+
+
+    public static void openActivity(Class activityClass){
+        getInstance().pushActivity(activityClass);
+    }
+
+    private static void setInstance(MainActivity activity){
+        shareInstance = activity;
+    }
+
+    public static MainActivity getInstance(){
+        return shareInstance;
+    }
 
     FrameLayout main_body;
 
@@ -23,8 +38,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
+        MainActivity.setInstance(this);
     }
 
     @Override

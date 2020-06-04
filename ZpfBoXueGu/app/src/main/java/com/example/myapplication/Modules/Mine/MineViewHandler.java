@@ -1,23 +1,30 @@
 package com.example.myapplication.Modules.Mine;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.Base.BaseViewHandler;
+import com.example.myapplication.Modules.LoginRegist.LoginActivity;
+import com.example.myapplication.Modules.LoginRegist.LoginActivity1;
+import com.example.myapplication.Modules.MainActivity;
+import com.example.myapplication.Modules.Mine.Setting.SettingActivity;
 import com.example.myapplication.R;
 
 public class MineViewHandler extends BaseViewHandler implements View.OnClickListener {
 
     ImageView headImg;
     TextView nameLab;
+    Context mContext;
 
 
 
     public MineViewHandler(Context context ) {
         super(context);
+        mContext=context;
     }
 
     @Override
@@ -47,11 +54,11 @@ public class MineViewHandler extends BaseViewHandler implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.playHistory:
-
+                openPlayHistory();
                 break;
 
             case R.id.setting:
-
+                openSetting();
                 break;
 
                 default:
@@ -61,10 +68,19 @@ public class MineViewHandler extends BaseViewHandler implements View.OnClickList
     }
 
     private void openSetting(){
+//        if (!MainActivity.getInstance().checkLogin()){
+//            return;
+//        }
+
         Log.d("as", "openSetting: ");
+        MainActivity.openActivity(LoginActivity.class);
     }
 
     private void openPlayHistory(){
+        if (!MainActivity.getInstance().checkLogin()){
+            return;
+        }
+
         Log.d("as", "openPlayHistory: ");
 
     }
