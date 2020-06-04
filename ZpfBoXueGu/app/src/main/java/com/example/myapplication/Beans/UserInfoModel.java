@@ -7,6 +7,7 @@ public class UserInfoModel extends LitePalSupport {
     private String userName;
     private String password;
     private String nickName;
+    private int id;
 
 
 
@@ -33,5 +34,13 @@ public class UserInfoModel extends LitePalSupport {
 
     public void setNickName(String nickName) {
         this.nickName = nickName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
